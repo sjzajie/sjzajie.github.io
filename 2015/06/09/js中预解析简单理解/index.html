@@ -8,16 +8,20 @@
 
 <title>
   
-    归档
+    预解析
   
 </title>
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="关于js中的预解析 首先js引擎会创建一个对象，这个对象中包含变量声明和unfined; 以及函数名和函数体 其次依次执行代码 预解析中遵循一个搜索原则 首先在函数中查看是否有变量声明，如果没有就往上一级查找，上级没有就再往上一个查找，如果都没有，返回undefined 例如  function func2 () {console.log( num ); var num = 456; consol">
+<meta property="og:type" content="article">
+<meta property="og:title" content="预解析">
+<meta property="og:url" content="http://yoursite.com/2015/06/09/js中预解析简单理解/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="关于js中的预解析 首先js引擎会创建一个对象，这个对象中包含变量声明和unfined; 以及函数名和函数体 其次依次执行代码 预解析中遵循一个搜索原则 首先在函数中查看是否有变量声明，如果没有就往上一级查找，上级没有就再往上一个查找，如果都没有，返回undefined 例如  function func2 () {console.log( num ); var num = 456; consol">
+<meta property="og:updated_time" content="2017-07-29T02:22:16.498Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="预解析">
+<meta name="twitter:description" content="关于js中的预解析 首先js引擎会创建一个对象，这个对象中包含变量声明和unfined; 以及函数名和函数体 其次依次执行代码 预解析中遵循一个搜索原则 首先在函数中查看是否有变量声明，如果没有就往上一级查找，上级没有就再往上一个查找，如果都没有，返回undefined 例如  function func2 () {console.log( num ); var num = 456; consol">
 
 
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -145,43 +149,26 @@
       
         <div style="max-width: 1000px">
       
-          
-
+          <article id="post-js中预解析简单理解" class="article article-type-post">
+  
+    <h1 class="article-header">
+      预解析
+    </h1>
   
   
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2015" class="archive-year">2015</a></h1>
-        </div>
-        <div class="post-list">
-    
-  
 
-    <div class="post-list-item article">
-      <h3 class="article-header">
-        <a href="/2015/06/09/js中预解析简单理解/" >
-  预解析
-</a>
-
-      </h3>
-      
-
-      <div class="article-info">
-        <a href="/2015/06/09/js中预解析简单理解/"><span class="article-date">
+  <div class="article-info">
+    <span class="article-date">
   2015-06-09
 </span>
-</a>
-        
 
-        
+    
 
-      </div>
-      <div class="article-entry">
-        
-          <h2 id="关于js中的预解析"><a href="#关于js中的预解析" class="headerlink" title="关于js中的预解析"></a>关于js中的预解析</h2><ul>
+    
+
+  </div>
+  <div class="article-entry">
+    <h2 id="关于js中的预解析"><a href="#关于js中的预解析" class="headerlink" title="关于js中的预解析"></a>关于js中的预解析</h2><ul>
 <li>首先js引擎会创建一个对象，这个对象中包含变量声明和unfined; 以及函数名和函数体</li>
 <li>其次依次执行代码 预解析中遵循一个搜索原则 首先在函数中查看是否有变量声明，如果没有就往上一级查找，上级没有就再往上一个查找，如果都没有，返回undefined</li>
 <li>例如  function func2 () {<pre><code>console.log( num );
@@ -198,11 +185,29 @@ console.log( num );
 <li>再次返回fun2(num) 代码执行完毕</li>
 </ul>
 
+  </div>
+  <footer class="article-footer">
+    
+  <div class="cc">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" title="署名-相同方式共享">
+      <img src="/images/cc/cc.png">
+      
+          <img src="/images/cc/by.png">
         
-      </div>
-    </div>
+          <img src="/images/cc/sa.png">
+      
+      <span>
+        本作品采用知识共享 署名-相同方式共享 4.0 国际许可协议进行许可。
+      </span>
+    </a>
+  </div>
 
-  
+
+    
+
+  </footer>
+</article>
+
 
 
 
